@@ -1,0 +1,37 @@
+{
+    "name": "id-0x56/laravel-demo-package",
+    "description": "Laravel demo package",
+    "type": "library",
+    "keywords": [
+        "laravel",
+        "package"
+    ],
+    "require": {
+        "php": "^7.3|^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.18"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "id-0x56",
+            "email": "id.0x56@Gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "id_0x56\\LaravelDemoPackage\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "id_0x56\\LaravelDemoPackage\\Providers\\LaravelDemoPackageServiceProvider"
+            ],
+            "aliases": {
+                "DemQ": "id_0x56\\LaravelDemoPackage\\Facades\\LaravelDemoPackageFacade"
+            }
+        }
+    }
+}
