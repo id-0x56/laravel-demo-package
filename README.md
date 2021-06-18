@@ -5,7 +5,7 @@
 composer require id-0x56/laravel-demo-package
 ```
 ```
-php artisan vendor:publish --provider=id_0x56\LaravelDemoPackage\Providers\LaravelDemoPackageServiceProvider
+php artisan vendor:publish --provider="id_0x56\LaravelDemoPackage\Providers\LaravelDemoPackageServiceProvider"
 ```
 
 ### Configure
@@ -24,5 +24,5 @@ use DemQ;
 
 // ...
 
-DemQ::hi()
+echo DemQ::hi()
 ```
